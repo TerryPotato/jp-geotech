@@ -42,7 +42,7 @@ function App() {
 
       let docHeight = document.documentElement.scrollHeight - window.innerHeight;
       let scrollPercent = docHeight > 0 ? window.scrollY / docHeight : 0;
-      let droneX = 4;
+      let droneX = 1.5;
       let droneY = 15 + (scrollPercent * 70);
 
       if (droneRef.current) {
@@ -81,7 +81,7 @@ function App() {
           style={{
             left: 0,
             top: 0,
-            width: '100px',
+            width: '95px',
             willChange: 'transform'
           }}
         >
