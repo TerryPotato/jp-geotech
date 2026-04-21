@@ -2,6 +2,7 @@ import React from 'react';
 import { Mail, ExternalLink } from 'lucide-react';
 import linkedin from '../../assets/linkedin.png';
 import whatsapp from '../../assets/whatsapp.png';
+import logo from '../../assets/logo geotech.svg';
 
 function Footer() {
   let currentYear = new Date().getFullYear();
@@ -14,7 +15,10 @@ function Footer() {
           
           {/* Columna 1: Marca del Cliente */}
           <div className="space-y-4">
-            <h4 className="font-heading font-bold text-xl text-brand-forest">JP GeoTech</h4>
+            <div className="flex items-center gap-3">
+              <img src={logo} alt="JP GeoTech logo" className="h-10 w-auto" />
+              <h4 className="font-heading font-bold text-xl text-brand-forest">JP GeoTech</h4>
+            </div>
             <p className="text-brand-deep/60 text-sm font-body leading-relaxed">
               Soluciones avanzadas en Ingeniería Forestal, SIG y monitoreo con drones potenciados por IA.
             </p>

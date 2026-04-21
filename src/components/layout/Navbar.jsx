@@ -1,10 +1,12 @@
 import React from 'react';
 import { MapPin } from 'lucide-react';
+import logo from '../../assets/logo geotech.svg';
 
 const Navbar = () => {
   return (
     <nav className="flex items-center justify-between px-6 py-4 bg-white/80 backdrop-blur-md fixed w-full top-0 z-50 shadow-sm border-b border-brand-canvas">
       <div className="flex items-center gap-2">
+        <img src={logo} alt="JP GeoTech logo" className="h-12 w-auto" />
         <a href="#home" className="font-bold text-xl tracking-tight text-brand-deep font-heading">JP GeoTech</a>
       </div>
       
