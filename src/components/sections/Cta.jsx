@@ -1,6 +1,8 @@
 import React from 'react';
 import { Mail } from 'lucide-react';
 
+const WHATSAPP_ICON_URL = 'https://cdn-icons-png.flaticon.com/512/733/733585.png';
+
 function Cta() {
   return (
     <section className="py-12 px-6 pb-24 bg-brand-bg">
@@ -28,11 +30,12 @@ function Cta() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
               {/* Botón de WhatsApp Blanco */}
               <a 
-                href="https://wa.me/529231104368"
+                href="https://wa.link/dqfuog"
                 target="_blank"
                 rel="noopener noreferrer" 
-                className="bg-white hover:bg-brand-canvas text-brand-forest px-8 py-3.5 rounded-2xl font-heading font-bold text-lg transition-colors shadow-lg"
+                className="bg-white hover:bg-brand-canvas text-brand-forest px-8 py-3.5 rounded-2xl font-heading font-bold text-lg transition-colors shadow-lg inline-flex items-center gap-3"
               >
+                <img src={WHATSAPP_ICON_URL} alt="WhatsApp" className="w-6 h-6 object-contain" />
                 WhatsApp
               </a>
               

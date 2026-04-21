@@ -1,6 +1,7 @@
 import React from 'react';
 import { Mail, ExternalLink } from 'lucide-react';
 import linkedin from '../../assets/linkedin.png';
+import whatsapp from '../../assets/whatsapp.png';
 
 function Footer() {
   let currentYear = new Date().getFullYear();
@@ -24,15 +25,21 @@ function Footer() {
             <h4 className="font-heading font-bold text-sm uppercase tracking-widest text-brand-deep/40">Contacto</h4>
             <ul className="space-y-3">
               <li>
-                <a href="mailto:chucho1506.jpc@gmail.com" className="flex items-center gap-2 text-brand-deep/70 hover:text-brand-forest transition-colors text-sm">
+                <a href="mailto:chucho1506.jpc@gmail.com" className="flex items-center gap-2 text-gray-deep/70 hover:text-brand-forest transition-colors text-sm">
                   <Mail size={16} />
                   chucho1506.jpc@gmail.com
                 </a>
               </li>
               <li>
-                <a href="https://linkedin.com/in/jesus-prados-coronado-6577b6125" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-brand-deep/70 hover:text-brand-forest transition-colors text-sm">
+                <a href="https://linkedin.com/in/jesus-prados-coronado-6577b6125" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-gray-deep/70 hover:text-brand-forest transition-colors text-sm">
                   <img src={linkedin} alt="LinkedIn" className="w-4 h-4 object-contain" />
-                  LinkedIn Perfil
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <a href="https://wa.link/dqfuog" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-gray-deep/70 hover:text-brand-forest transition-colors text-xs leading-snug">
+                  <img src={whatsapp} alt="WhatsApp" className="w-4 h-4 object-contain" />
+                  9231104368
                 </a>
               </li>
             </ul>
@@ -46,10 +53,15 @@ function Footer() {
             </p>
             <div className="pt-2">
               <p className="text-xs text-brand-deep/60 mb-3 italic">¿Quieres que diseñe tu página?</p>
-              <div className="inline-flex items-center gap-2 text-brand-deep/50 font-heading font-bold text-sm">
+              <a
+                href="https://wa.link/oqlxii"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-brand-deep/50 hover:text-brand-forest transition-colors font-heading font-bold text-sm"
+              >
                 Contacto de desarrollo disponible bajo solicitud
                 <ExternalLink size={14} />
-              </div>
+              </a>
             </div>
           </div>
 

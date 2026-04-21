@@ -3,7 +3,7 @@ import { UserCog, Plane, Trees, IdCard } from 'lucide-react';
 
 const TargetAudience = () => {
   return (
-    <section className="py-24 px-6 bg-brand-tan">
+    <section id="audiencia" className="py-24 px-6 bg-brand-tan">
       <div className="max-w-6xl mx-auto">
         
         {/* Título de la sección */}

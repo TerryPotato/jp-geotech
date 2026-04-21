@@ -6,7 +6,7 @@ import dronImage from '../../assets/images/dron.png';
 
 const Hero = () => {
   return (
-    <section 
+    <section id='home'
       className="relative min-h-screen flex items-center pt-20 pb-12 overflow-hidden"
       style={{
         backgroundImage: `url(${bgImage})`,

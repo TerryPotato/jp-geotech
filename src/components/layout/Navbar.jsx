@@ -5,15 +5,15 @@ const Navbar = () => {
   return (
     <nav className="flex items-center justify-between px-6 py-4 bg-white/80 backdrop-blur-md fixed w-full top-0 z-50 shadow-sm border-b border-brand-canvas">
       <div className="flex items-center gap-2">
-        <span className="font-bold text-xl tracking-tight text-brand-deep font-heading">JP GeoTech</span>
+        <a href="#home" className="font-bold text-xl tracking-tight text-brand-deep font-heading">JP GeoTech</a>
       </div>
       
       {/* Enlaces de escritorio */}
       <div className="hidden md:flex gap-6 text-sm font-medium text-brand-deep/70">
-        <a href="#programa" className="hover:text-brand-forest transition-colors">Programa</a>
         <a href="#beneficios" className="hover:text-brand-forest transition-colors">Beneficios</a>
+        <a href="#programa" className="hover:text-brand-forest transition-colors">Programa</a>
+        <a href="#audiencia" className="hover:text-brand-forest transition-colors">Metodología</a>
         <a href="#instructor" className="hover:text-brand-forest transition-colors">Instructor</a>
-        <a href="#metodologia" className="hover:text-brand-forest transition-colors">Metodología</a>
       </div>
 
       {/* Botón de inscripción con el color Golden Hour (Primary Action) */}
