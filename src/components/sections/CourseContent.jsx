@@ -1,18 +1,23 @@
 import React from 'react';
 import LightboxImage from '../ui/LightBoxImage';
 
-const CourseContent = () => {
-  // Arreglo con los datos exactos del mockup
-  const capitulos = [
+import proceso1 from '../../assets/proceso 1.jpeg';
+import proceso2 from '../../assets/proceso 2.jpeg';
+import proceso3 from '../../assets/proceso 3.jpeg';
+import proceso4 from '../../assets/proceso 4.jpeg';
+import proceso5 from '../../assets/proceso 5.jpeg';
+
+function CourseContent() {
+  let capitulos = [
     {
       id: "01",
       titulo: "Configuración del entorno y preparación de datos",
       descripcion: "Conecta herramientas en la nube y prepara tus imágenes aéreas fragmentando ortomosaicos para el entrenamiento del modelo.",
       herramientas: "Google Colab · Python",
-      colorBg: "#7A4C11", // Café oscuro
+      colorBg: "#7A4C11",
       colorTextoNum: "#FFFFFF",
       colorBadgeBg: "#F0E4D8",
-      imagen: "/src/assets/proceso 1.jpeg",
+      imagen: proceso1,
       altImagen: "Proceso 1 del curso"
     },
     {
@@ -20,10 +25,10 @@ const CourseContent = () => {
       titulo: "Etiquetado asistido en Roboflow",
       descripcion: "Usa IA para ayudarte a identificar y etiquetar copas de forma masiva, reduciendo drásticamente el tiempo de preparación del dataset.",
       herramientas: "Roboflow · Box Prompting",
-      colorBg: "#F6A962", // Naranja claro
-      colorTextoNum: "#003124", // brand-deep
+      colorBg: "#F6A962",
+      colorTextoNum: "#003124",
       colorBadgeBg: "#FDF0E3",
-      imagen: "/src/assets/proceso 2.jpeg",
+      imagen: proceso2,
       altImagen: "Proceso 2 del curso"
     },
     {
@@ -31,10 +36,10 @@ const CourseContent = () => {
       titulo: "Entrenamiento del modelo YOLOv8",
       descripcion: "Lanza el proceso de entrenamiento utilizando la arquitectura YOLOv8, ajustando los parámetros para detección de objetos en alta resolución.",
       herramientas: "YOLOv8 · GPU Cloud",
-      colorBg: "#4BE5CA", // Teal/Cyan
+      colorBg: "#4BE5CA",
       colorTextoNum: "#003124",
       colorBadgeBg: "#E3FAF5",
-      imagen: "/src/assets/proceso 3.jpeg",
+      imagen: proceso3,
       altImagen: "Proceso 3 del curso"
     },
     {
@@ -42,10 +47,10 @@ const CourseContent = () => {
       titulo: "Evaluación estadística y diagnóstico",
       descripcion: "Interpreta los gráficos de precisión y pérdida para asegurar que tu modelo sea confiable antes de aplicarlo en el campo.",
       herramientas: "Métricas YOLO · mAP",
-      colorBg: "#A4E4B8", // Verde claro
+      colorBg: "#A4E4B8",
       colorTextoNum: "#003124",
       colorBadgeBg: "#EEF9F2",
-      imagen: "/src/assets/proceso 4.jpeg",
+      imagen: proceso4,
       altImagen: "Proceso 4 del curso"
     },
     {
@@ -53,10 +58,10 @@ const CourseContent = () => {
       titulo: "Inferencia e integración con SIG",
       descripcion: "Exporta tus detecciones a coordenadas reales y visualízalas en tu software SIG favorito para análisis territorial final.",
       herramientas: "GeoPackage · QGIS",
-      colorBg: "#FA9A1B", // Naranja intenso
+      colorBg: "#FA9A1B",
       colorTextoNum: "#003124",
       colorBadgeBg: "#FEF1E0",
-      imagen: "/src/assets/proceso 5.jpeg",
+      imagen: proceso5,
       altImagen: "Proceso 5 del curso"
     }
   ];
@@ -131,6 +136,6 @@ const CourseContent = () => {
       </div>
     </section>
   );
-};
+}
 
 export default CourseContent;
