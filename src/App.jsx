@@ -8,6 +8,7 @@ import HowItWorks from './components/sections/HowItWorks';
 import Instructor from './components/sections/Instructor';
 import Cta from './components/sections/Cta';
 import Footer from './components/sections/Footer';
+import FloatingWhatsappButton from './components/ui/FloatingWhatsappButton';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         
         {/* Aquí integraremos las demás secciones después */}
       </main>
+      <FloatingWhatsappButton />
     </div>
   );
 }
