@@ -1,0 +1,32 @@
+/* 1. Importación de tipografías desde Google Fonts SIEMPRE HASTA ARRIBA */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400&family=Space+Grotesk:wght@600;700&display=swap');
+
+/* 2. Luego Tailwind */
+@import "tailwindcss";
+
+/* 3. Variables de diseño */
+@theme {
+  /* The Sun-Drenched Palette */
+  --color-brand-forest: #0f5238;
+  --color-brand-brown: #895100;
+  --color-brand-orange: #fd9d1a;
+  --color-brand-canvas: #fbfbf9;
+  --color-brand-tan: #edeeea;
+  --color-brand-deep: #105339;
+  --color-brand-bg: #f3f4f0;
+  --color-gray-soft: #404943;
+  --color-gray-deep: #1A1C1A;
+  --color-soft-green: #B1F0CE;
+  --color-brown: #663B00;
+
+  /* Typography System */
+  --font-heading: "Space Grotesk", sans-serif;
+  --font-body: "Manrope", sans-serif;
+}
+
+/* 4. Estilos base del sistema de diseño */
+body {
+  background-color: var(--color-brand-bg);
+  color: var(--color-brand-deep);
+  font-family: var(--font-body);
+}
