@@ -3,6 +3,7 @@ import { Mail, ExternalLink } from 'lucide-react';
 import linkedin from '../../assets/linkedin.png';
 import whatsapp from '../../assets/whatsapp.png';
 import logo from '../../assets/logo geotech.svg';
+import { CONTACT } from '../../config/contact';
 
 function Footer() {
   let currentYear = new Date().getFullYear();
@@ -29,21 +30,21 @@ function Footer() {
             <h4 className="font-heading font-bold text-sm uppercase tracking-widest text-brand-deep/40">Contacto</h4>
             <ul className="space-y-3">
               <li>
-                <a href="mailto:chucho1506.jpc@gmail.com" className="flex items-center gap-2 text-gray-deep/70 hover:text-brand-forest transition-colors text-sm">
+                <a href={`mailto:${CONTACT.email}`} className="flex items-center gap-2 text-gray-deep/70 hover:text-brand-forest transition-colors text-sm">
                   <Mail size={16} />
-                  chucho1506.jpc@gmail.com
+                  {CONTACT.email}
                 </a>
               </li>
               <li>
-                <a href="https://linkedin.com/in/jesus-prados-coronado-6577b6125" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-gray-deep/70 hover:text-brand-forest transition-colors text-sm">
+                <a href={CONTACT.linkedin} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-gray-deep/70 hover:text-brand-forest transition-colors text-sm">
                   <img src={linkedin} alt="LinkedIn" className="w-4 h-4 object-contain" />
                   LinkedIn
                 </a>
               </li>
               <li>
-                <a href="https://wa.link/dqfuog" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-gray-deep/70 hover:text-brand-forest transition-colors text-xs leading-snug">
+                <a href={CONTACT.whatsappLink} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-gray-deep/70 hover:text-brand-forest transition-colors text-xs leading-snug">
                   <img src={whatsapp} alt="WhatsApp" className="w-4 h-4 object-contain" />
-                  9231104368
+                  {CONTACT.whatsappNumber}
                 </a>
               </li>
             </ul>

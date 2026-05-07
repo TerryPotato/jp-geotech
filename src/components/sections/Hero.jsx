@@ -3,6 +3,7 @@ import { PlayCircle } from 'lucide-react';
 // Importamos las imágenes desde tu carpeta local
 import bgImage from '../../assets/images/background.png';
 import dronImage from '../../assets/images/dron.png';
+import { CONTACT } from '../../config/contact';
 
 const Hero = () => {
   return (
@@ -44,7 +45,7 @@ const Hero = () => {
           {/* Botones */}
           <div className="flex flex-col sm:flex-row items-center gap-5 pt-3">
             <a 
-              href="https://wa.link/dqfuog" 
+              href={CONTACT.whatsappLink}
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-brand-orange hover:bg-brand-brown/80 text-white px-8 py-3.5 rounded-lg font-heading font-semibold transition-all shadow-lg shadow-brand-golden/30 w-full sm:w-auto text-center"

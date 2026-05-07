@@ -1,6 +1,7 @@
 import React from 'react';
 import { MapPin } from 'lucide-react';
 import logo from '../../assets/logo geotech.svg';
+import { CONTACT } from '../../config/contact';
 
 const Navbar = () => {
   return (
@@ -20,7 +21,7 @@ const Navbar = () => {
 
       {/* Botón de inscripción con el color Golden Hour (Primary Action) */}
       <a 
-        href="https://wa.link/dqfuog" 
+        href={CONTACT.whatsappLink}
         target="_blank" 
         rel="noopener noreferrer"
         className="bg-[#27654b] hover:bg-[#1f4a3b] text-white px-6 py-2 rounded-md font-heading font-semibold transition-colors text-sm shadow-sm"

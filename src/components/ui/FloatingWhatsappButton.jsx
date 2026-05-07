@@ -1,10 +1,11 @@
 import React from 'react';
+import { CONTACT } from '../../config/contact';
 const WHATSAPP_ICON_URL = 'https://cdn-icons-png.flaticon.com/512/733/733585.png';
 
 function FloatingWhatsappButton() {
   return (
     <a
-      href="https://wa.link/dqfuog"
+      href={CONTACT.whatsappLink}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Abrir WhatsApp"

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Mail } from 'lucide-react';
+import { CONTACT } from '../../config/contact';
 
 const WHATSAPP_ICON_URL = 'https://cdn-icons-png.flaticon.com/512/733/733585.png';
 
@@ -30,7 +31,7 @@ function Cta() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
               {/* Botón de WhatsApp Blanco */}
               <a 
-                href="https://wa.link/dqfuog"
+                href={CONTACT.whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer" 
                 className="bg-white hover:bg-brand-canvas text-brand-forest px-8 py-3.5 rounded-2xl font-heading font-bold text-lg transition-colors shadow-lg inline-flex items-center gap-3"
@@ -41,11 +42,11 @@ function Cta() {
               
               {/* Enlace de correo */}
               <a 
-                href="mailto:chucho1506.jpc@gmail.com" 
+                href={`mailto:${CONTACT.email}`}
                 className="flex items-center gap-2 text-white hover:text-brand-golden font-body font-medium transition-colors"
               >
                 <Mail size={20} />
-                chucho1506.jpc@gmail.com
+                {CONTACT.email}
               </a>
             </div>
           </div>
