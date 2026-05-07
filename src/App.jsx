@@ -8,6 +8,7 @@ import HowItWorks from './components/sections/HowItWorks';
 import Instructor from './components/sections/Instructor';
 import Cta from './components/sections/Cta';
 import Footer from './components/sections/Footer';
+import FloatingWhatsappButton from './components/ui/FloatingWhatsappButton';
 
 import flyingDron from './assets/dron.png'; 
 
@@ -104,6 +105,7 @@ function App() {
         <Cta />
       </main>
 
+      <FloatingWhatsappButton />
       <Footer />
     </div>
   );
