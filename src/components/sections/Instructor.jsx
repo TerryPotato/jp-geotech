@@ -1,7 +1,7 @@
 import React from 'react';
 import { BadgeCheck, GraduationCap } from 'lucide-react';
 // Deja esta importación lista para cuando subas la foto real de Jesús
-import instructorImg from '../../assets/user.png';
+import instructorImg from '../../assets/user.jpeg';
 
 function Instructor() {
   return (

@@ -3,5 +3,5 @@ export const CONTACT = {
   email: 'chucho1506.jpc@gmail.com',
   whatsappNumber: '9231104368',
   whatsappLink: 'https://wa.link/dqfuog',
-  linkedin: 'https://linkedin.com/in/jesus-prados-coronado-6577b6125',
+  linkedin: 'https://www.linkedin.com/in/jes%C3%BAs-prados-coronado-6577b6125/',
 };

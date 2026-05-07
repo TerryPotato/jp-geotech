@@ -52,11 +52,6 @@ const Hero = () => {
             >
               Quiero inscribirme
             </a>
-            
-            <button className="flex items-center gap-2 text-brand-forest font-heading font-semibold hover:text-brand-deep transition-colors group">
-              <PlayCircle size={24} className="group-hover:scale-110 transition-transform" />
-              Ver en acción
-            </button>
           </div>
         </div>
 
